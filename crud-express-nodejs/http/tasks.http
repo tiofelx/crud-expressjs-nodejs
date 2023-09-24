@@ -1,0 +1,22 @@
+POST http://localhost:3000/tasks
+content-type: application/json
+
+{
+    "name": "Arrumar o quarto",
+    "duration": "1h30min"
+}
+
+###
+GET http://localhost:3000/tasks
+
+###
+PUT http://localhost:3000/tasks/1f043f57-5ffc-46c9-bf54-d762e61f9b13
+content-type: application/json
+
+{
+    "name": "Arrumar o quarto depois de limpa-lo",
+    "duration": "2h45min"
+}
+
+###
+DELETE http://localhost:3000/tasks/1f043f57-5ffc-46c9-bf54-d762e61f9b13
